@@ -4,7 +4,6 @@ function loadData(inputFileName: string): string[] {
     return readFileSync('./' + inputFileName, 'utf-8').split('\r\n')
 }
 
-
 function positionInMapBorder(y: number, x: number, yBorder: number, xBorder: number): boolean {
     return x >= 0 && x < xBorder && y >= 0 && y < yBorder
 }
